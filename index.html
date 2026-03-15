@@ -1,11 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bárbara Ruiz">
     <title>Guia Basica de lenguajes de programacion</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Ruta de aprendizaje básica</h1>
+        <p>Esta es una guia basica de lenguajes de programacion para tener un contexto inicial de los conceptos
+            fundamentales.</p>
+        <nav>
+            <h2>Contenido</h2>
+            <ul>
+                <li><a href="#niveles-abstracion">Niveles de Abstracción</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="niveles-abstracion">
+            <article>
+                <h2>Niveles de Abstracción</h2>
+                <h3>¿Qué es la abstracción en programación?</h3>
+                <p>Es la capacidad del código para simplificar conceptos abstractos del mundo real, en otras palabras,
+                    permite manejar ideas complejas de forma simple y a veces fragmentadas
+                    esto significa que el código puede hacer que la máquina comprenda mejor el mundo real.
+                    Un ejemplo de esto se encuentra en la programación Orientada a Objetos.
+                    POO funciona encapsulando datos en unidades llamadas clases, estas clases (que se pueden crear en
+                    Java y otros lenguajes) permiten, mediante constructores, variables, y el uso
+                    de getters y setters, representar y manipular propiedades de un concepto de la vida real y sus
+                    cualidades.
+                    Así se pueden establecer las características y funciones que debería tener un objeto, facilitando su
+                    uso en la programación.
+                    A partir de esta idea, podemos decir que existen lenguajes con diferentes grados de abstracción</p>
+            </article>
+        </section>
+
+
+        <section id="bajo-nivel">
+            <article>
+                <h2>Lenguajes de Bajo Nivel</h2>
+                <h3>¿Qué son?</h3>
+                <p>Son aquellos que interactúan directamente con el hardware.
+                    Esto los convierte en una categoría que requiere gran atención al detalle.</p>
+                <h3>Dentro de los lenguajes de bajo nivel se encuentran:</h3>
+                <ul>
+                    <li><b>Binario:</b> El sistema numérico base 2, compuesto por 0s y 1s, que es el lenguaje más básico
+                        que la computadora puede entender directamente ya que cada 1 y 0 significa la presecia de
+                        voltaje(Encendido 1) o la asusencia de voltaje (apagado 0).</li>
+                    <li><b>Lenguaje de máquina:</b> Es el lenguaje más básico, compuesto por instrucciones binarias (0s
+                        y 1s) que la computadora puede entender directamente. Es específico para cada tipo de
+                        procesador.</li>
+                    <li><b>Lenguaje ensamblador:</b> Usa mnemónicos (palabras o abreviaturas) para representar, de forma
+                        simbólica, instrucciones que luego son traducidas a binario para que el procesador las ejecute.
+                    </li>
+                </ul>
+            </article>
+
+            <section id="como-interactuan-los-lenguajes-de-bajo-nivel-con-el-hardware">
+                <article>
+                    <h2>¿Cómo interactúan los lenguajes de bajo nivel con el hardware?</h2>
+                    <p>Al ser patrones binarios, la Unidad de Control (CU) dentro de la CPU interpreta cada instrucción.
+                        Cada vez que recibe un 1 o un 0, se activan o desactivan circuitos eléctricos internos, como las
+                        puertas lógicas de los transistores
+                        esto provoca que el hardware realice tareas específicas, por ejemplo, leer la memoria RAM.</p>
+                </article>
+            </section>
+
+            <section id="usos-ejemplo">
+                <article>
+                    <h2>Usos de los lenguajes de bajo nivel</h2>
+                    <ul>
+                        <li><b>Drivers</b>Son programas que le indican al sistema operativo cómo comunicarse con el
+                            hardware.</li>
+                        <li><b>Sistemas Operativos (OS)</b>Actúan como traductores entre el usuario, los programas y el
+                            hardware.</li>
+                        <li><b>Firmware</b>Es el software que controla el comportamiento de los dispositivos hardware,
+                            como los BIOS o UEFI.</li>
+                    </ul>
+                    <h3>Ejemplo</h3>
+                    <h3>Bios</h3>
+                    <p>El El Basic Input/Output System es una secuencia de código de ejecución almacenada en un chip de
+                        la placa base.
+                        Su función es reconocer lo que está conectado a la placa base y permitir que el sistema
+                        arranque.</p>
+                    <h3>¿Cómo lo hace?</h3>
+                    <p>El BIOS envía pequeñas corrientes eléctricas a las ranuras y conectores de la placa base. Esto le
+                        permite detectar la presencia física de los componentes, verificar que los voltajes sean
+                        correctos
+                        y obtener información sobre sus características y capacidades para asi confirma los parametros
+                        necesarios y asigna los recursos. Siendo un ejemplo muy claro de uso de lenguajes de bajo nivel
+                    </p>
+                </article>
+            </section>
+        </section>
+
+
+        <section id="lenguajes-alto-nivel">
+            <article>
+                <h2>Lenguajes de Alto Nivel</h2>
+                <h3>¿Qué son?</h3>
+                <p>Son aquellos más compresibles para el ser humano, son compiladores que toman las instrucciones que
+                    creas y las transforma a codigo maquina o sea 1 y 0
+                    para que pueda ser
+                    interpretado por la maquina </p>
+                <blockquote><i><b>Los compiladores son instrucciones que se traducen a codigo maquina</b></i>
+                </blockquote>
+            </article>
+            <section id="usos-ejemplo">
+                <article>
+                    <h2>Usos y Ejemplos</h2>
+                    <p>Los lenguajes de alto nivel se utilizan para desarrollar una amplia variedad de aplicaciones,
+                        desde
+                        software de escritorio hasta aplicaciones web y móviles. Algunos ejemplos populares incluyen:
+                    </p>
+                    <ul>
+                        <li><b>Python:</b> Conocido por su simplicidad </li>
+                        <li><b>Java:</b> Ampliamente utilizado en aplicaciones empresariales y desarrollo de Android.
+                        </li>
+                </article>
+            </section>
+
+            <section id="detalles-compilacion">
+                <article>
+                    <h2>Detalles sobre la compilación</h2>
+                    <p>En el proceso que toma la compilación hay varios pasos que realiza internamente el compilador</p>
+                    <ul>
+                        <li><b>Análisis léxico:</b> Es un proceso donde se analiza la sintaxis del lenguaje, para así
+                            evitar errores y las instrucciones estén estandarizadas </li>
+                        <li><b>Análisis sintáctico:</b> El compilador divide el codigo en tokens /minifaragmentos
+                            ejemplo divide por bloques cada if o else y con estos tokens arma un albol sematico donde
+                            cada nodo es una operación </li>
+                        <P><i>¿Qué es un árbol semántico?</i></P>
+                        <p>Es una estructura jerárquica que representa las relaciones entre conceptos </p>
+                        <li><b>Análisis semántico:</b> Empieza a pensar a analizar la información de cada bloque
+                            construido y a entender el significado de cada operación </li>
+                        <li><b>Optimización:</b> Al haber finalizado la sintaxis y revisar que hace el código se encarga
+                            de buscar formas más fáciles de ejecutarlo y reducir al cantidad de memoria utilizada.</li>
+                        <li><b>Generación de código:</b> Se produce el código objeto que puede ser ejecutado por la
+                            máquina.</li>
+                    </ul>
+                </article>
+            </section>
+
+        <section id="tipados">
+            <article>
+                <h2>¿Qué son los tipados?</h2>
+                <p>Son el tipo de sintaxis de código que usas para definir un tipo de dato, lo que seria definir una variable y asignarle un valor </p>
+                <h3>Dentos de los compiladores hay tipos de tipados</h3>
+                <li><b>Tipado estático:</b> Siempre tienen un tipo de tipado, sea débil o fuerte, o sea aquellos que no  permiten ningún dato a la interpretación </li>
+                <p>Ejemplos: Java, C++, C#, Go</p>
+                <li><b>Tipado dinámico:</b>Son aquellos que no tienen tipado o  tienen un tipado débil, aquel que te permite que las variables no sean definidas con el valor que se va a almacenar dentro del si no que lo intuye automáticamente dependiendo de la variable a definir.</li>
+                <p>Ejemplos: Python, JavaScript, Ruby</p>
+            </article>
+        </section>
+        </section>
+
+        
+
+
+
+
+
+    </main>
 </body>
+
 </html>
